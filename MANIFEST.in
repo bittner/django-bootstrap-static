@@ -1,1 +1,3 @@
+include README.md
 recursive-include bootstrap/static *.*
+recursive-include bootstrap/templates *.*
