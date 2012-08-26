@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
 
-version = '2.0.2'
+version = '2.0.3'
 
 setup(name='django-bootstrap-static',
       version=version,
-      description="A Collection of Bootstrap static",
+      description="A Collection of Bootstrap static files.",
       long_description=open("README.md", "r").read(),
       classifiers=[
           "Development Status :: 5 - Production/Stable",
