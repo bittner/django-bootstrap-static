@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '2.3.2'
+version = '3.1.1'
 
 
 setup(name='django-bootstrap-static',
