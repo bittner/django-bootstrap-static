@@ -16,7 +16,7 @@ Occasionally, I forget to update this package with new bootstrap updates.  Pleas
 Configuration
 -------------
 
-To pickup bootstrap static files, simply inlcude 'boostrap' in your Intalled Apps.  You can also get Fontawesome support by adding 'fontawesome' to your installed apps.
+To pickup bootstrap static files, simply include 'bootstrap' in your INSTALLED_APPS.  You can also get Fontawesome support by adding 'fontawesome' to your installed apps.
 
 Please refer to each project for integration/install guides.
 
