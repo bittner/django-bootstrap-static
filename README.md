@@ -6,7 +6,7 @@ Bootstrap and optional Font Awesome static files ready for the picking.
 Install
 -------
 
-pip install django-bootstrap-static==3.3.2
+pip install django-bootstrap-static==3.3.4
 
 Contribution
 ------------
