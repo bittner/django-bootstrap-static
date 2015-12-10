@@ -1,12 +1,14 @@
 Django Bootstrap Static Files
 =============================
 
+Currently: Bootstrap 3.3.6 and Font Awesome 4.5.0
+
 Bootstrap and optional Font Awesome static files ready for the picking.
 
 Install
 -------
 
-pip install django-bootstrap-static==3.3.5
+pip install django-bootstrap-static==3.3.6
 
 Contribution
 ------------
