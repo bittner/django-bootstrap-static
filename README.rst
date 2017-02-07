@@ -69,15 +69,15 @@ Sources and Procedures
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Bootstrap: (all files from dist package)
-    `Bootstrap website / Getting started`_ -> drop into ``bootstrap/static/``
+    `Bootstrap website / Getting started`_ -> drop into ``bootstrap/static/bootstrap/``
 jQuery: (compressed, uncompressed, map)
-    `jQuery website / Download`_ -> rename and mix into ``bootstrap/static/js/``
+    `jQuery website / Download`_ -> rename and mix into ``bootstrap/static/bootstrap/js/``
 
     Pick the latest version denoted as a dependency in ``bower.json`` (see `Plugin dependencies`_).
 Font Awesome: (``css/``, ``fonts/`` only)
-    `Font Awesome website`_ ("No thanks, just download") -> drop into ``fontawesome/static/``
+    `Font Awesome website`_ ("No thanks, just download") -> drop into ``fontawesome/static/fontawesome/``
 
-.. _Bootstrap website / Getting started: https://getbootstrap.com/getting-started/
+.. _Bootstrap website / Getting started: http://getbootstrap.com/getting-started/
 .. _jQuery website / Download: http://jquery.com/download/
 .. _Plugin dependencies: https://getbootstrap.com/javascript/
 .. _Font Awesome website: http://fontawesome.io/
