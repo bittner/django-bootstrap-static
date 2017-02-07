@@ -1,5 +1,6 @@
-Django Bootstrap Static Files
-=============================
+==============================================
+Django Bootstrap Static Files |latest-version|
+==============================================
 
 |bootstrap| |jquery| |fontawesome|
 
@@ -7,25 +8,28 @@ Bootstrap and optional Font Awesome static files ready for the picking.
 
 Also ships the latest jQuery compatible with Bootstrap, for optional inclusion.
 
+.. |latest-version| image:: https://img.shields.io/pypi/v/django-bootstrap-static.svg
+   :alt: Latest version on PyPI
+   :target: https://pypi.python.org/pypi/django-bootstrap-static
 .. |bootstrap| image:: https://img.shields.io/badge/Bootstrap-v3.3.7-563d7c.svg
    :alt: Bootstrap 3.3.7
-   :target: http://getbootstrap.com/getting-started/
+   :target: http://getbootstrap.com/
 .. |jquery| image:: https://img.shields.io/badge/jQuery-v3.1.1-0769ad.svg
    :alt: jQuery 3.1.1
-   :target: http://getbootstrap.com/getting-started/
-.. |fontawesome| image:: https://img.shields.io/badge/FontAwesome-v4.7.0-1c9a71.svg
+   :target: http://jquery.com/
+.. |fontawesome| image:: https://img.shields.io/badge/Font_Awesome-v4.7.0-1c9a71.svg
    :alt: Font Awesome 4.7.0
-   :target: http://fontawesome.io/get-started/
+   :target: http://fontawesome.io/
 
 Install
--------
+=======
 
 .. code-block:: bash
 
     pip install django-bootstrap-static
 
 Configuration
--------------
+=============
 
 To pickup Bootstrap static files, simply include ``'bootstrap'``, and optionally
 ``'fontawesome'``, in your ``INSTALLED_APPS``:
@@ -60,13 +64,13 @@ More details on integration may be available from each of the two projects:
 - http://fontawesome.io/get-started/
 
 Contribution
-------------
+============
 
 Occasionally, I forget to update this package with new bootstrap updates.
 Please feel free to submit a PR.
 
 Sources and Procedures
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
 Bootstrap: (all files from dist package)
     `Bootstrap website / Getting started`_ -> drop into ``bootstrap/static/bootstrap/``
@@ -83,7 +87,7 @@ Font Awesome: (``css/``, ``fonts/`` only)
 .. _Font Awesome website: http://fontawesome.io/
 
 Releases
---------
+========
 
 To keep with the Bootstrap release schedule we will keep version numbers of
 this app in sync with the bootstrap Major.Minor.Revision changes (`semver`_).
