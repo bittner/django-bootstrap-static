@@ -17,7 +17,7 @@ Also ships the latest jQuery compatible with Bootstrap, for optional inclusion.
 .. |jquery| image:: https://img.shields.io/badge/jQuery-v3.1.1-0769ad.svg
    :alt: jQuery 3.1.1
    :target: http://jquery.com/
-.. |fontawesome| image:: https://img.shields.io/badge/FontAwesome-v4.7.0-1c9a71.svg
+.. |fontawesome| image:: https://img.shields.io/badge/Font_Awesome-v4.7.0-1c9a71.svg
    :alt: Font Awesome 4.7.0
    :target: http://fontawesome.io/
 
