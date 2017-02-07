@@ -1,5 +1,6 @@
-Django Bootstrap Static Files
-=============================
+==============================================
+Django Bootstrap Static Files |latest-version|
+==============================================
 
 |bootstrap| |jquery| |fontawesome|
 
@@ -7,6 +8,9 @@ Bootstrap and optional Font Awesome static files ready for the picking.
 
 Also ships the latest jQuery compatible with Bootstrap, for optional inclusion.
 
+.. |latest-version| image:: https://img.shields.io/pypi/v/django-bootstrap-static.svg
+   :alt: Latest version on PyPI
+   :target: https://pypi.python.org/pypi/django-bootstrap-static
 .. |bootstrap| image:: https://img.shields.io/badge/Bootstrap-v3.3.7-563d7c.svg
    :alt: Bootstrap 3.3.7
    :target: http://getbootstrap.com/getting-started/
@@ -18,14 +22,14 @@ Also ships the latest jQuery compatible with Bootstrap, for optional inclusion.
    :target: http://fontawesome.io/get-started/
 
 Install
--------
+=======
 
 .. code-block:: bash
 
     pip install django-bootstrap-static
 
 Configuration
--------------
+=============
 
 To pickup Bootstrap static files, simply include ``'bootstrap'``, and optionally
 ``'fontawesome'``, in your ``INSTALLED_APPS``:
@@ -60,13 +64,13 @@ More details on integration may be available from each of the two projects:
 - http://fontawesome.io/get-started/
 
 Contribution
-------------
+============
 
 Occasionally, I forget to update this package with new bootstrap updates.
 Please feel free to submit a PR.
 
 Sources and Procedures
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
 Bootstrap: (all files from dist package)
     `Bootstrap website / Getting started`_ -> drop into ``bootstrap/static/bootstrap/``
@@ -83,7 +87,7 @@ Font Awesome: (``css/``, ``fonts/`` only)
 .. _Font Awesome website: http://fontawesome.io/
 
 Releases
---------
+========
 
 To keep with the Bootstrap release schedule we will keep version numbers of
 this app in sync with the bootstrap Major.Minor.Revision changes (`semver`_).
