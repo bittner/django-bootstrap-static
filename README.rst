@@ -1,10 +1,17 @@
-Django Bootstrap Static Files |bootstrap| |fontawesome|
-=======================================================
+Django Bootstrap Static Files
+=============================
+
+|bootstrap| |jquery| |fontawesome|
 
 Bootstrap and optional Font Awesome static files ready for the picking.
 
+Also ships the latest jQuery compatible with Bootstrap, for optional inclusion.
+
 .. |bootstrap| image:: https://img.shields.io/badge/Bootstrap-v3.3.7-563d7c.svg
    :alt: Bootstrap
+   :target: http://getbootstrap.com/getting-started/
+.. |jquery| image:: https://img.shields.io/badge/jQuery-v3.1.1-0769ad.svg
+   :alt: jQuery
    :target: http://getbootstrap.com/getting-started/
 .. |fontawesome| image:: https://img.shields.io/badge/FontAwesome-v4.7.0-1c9a71.svg
    :alt: Font Awesome
@@ -43,6 +50,7 @@ Then you can include CSS and JavaScript as usual static resources, e.g. using
     </head>
     <body>
         ...
+        <script src="{% static 'bootstrap/js/jquery.min.js' %}"></script>
         <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
     </body>
 
@@ -56,6 +64,20 @@ Contribution
 
 Occasionally, I forget to update this package with new bootstrap updates.
 Please feel free to submit a PR.
+
+Sources and Procedures
+^^^^^^^^^^^^^^^^^^^^^^
+
+Bootstrap: (all files from dist package)
+    `Bootstrap website / Getting started`_ -> drop into ``bootstrap/static/``
+jQuery: (compressed, uncompressed, map)
+    `jQuery website / Download`_ -> rename and mix into ``bootstrap/static/js/``
+Font Awesome: (``css/``, ``fonts/`` only)
+    `Font Awesome website`_ ("No thanks, just download") -> drop into ``fontawesome/static/``
+
+.. _Bootstrap website / Getting started: https://getbootstrap.com/getting-started/
+.. _jQuery website / Download: http://jquery.com/download/
+.. _Font Awesome website: http://fontawesome.io/
 
 Releases
 --------
