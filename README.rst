@@ -2,6 +2,8 @@
 Django Bootstrap Static Files |latest-version|
 ==============================================
 
+> Looking For Authors!  This project is currently looking for a user to take it over.  If that sounds like you, send a note to derek at stegelman dot com or open up an issue in this repository.
+
 |bootstrap| |jquery| |fontawesome|
 
 Bootstrap and optional Font Awesome static files ready for the picking.
