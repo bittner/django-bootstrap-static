@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
 
-version = '3.3.7.2'
+version = '4.0.0'
 
 setup(name='django-bootstrap-static',
       version=version,
-      description="A Collection of Bootstrap static files.",
+      description="A collection of Bootstrap static files.",
       long_description=open("README.rst", "r").read(),
       classifiers=[
           "Development Status :: 5 - Production/Stable",
@@ -20,10 +20,16 @@ setup(name='django-bootstrap-static',
           "Topic :: Utilities",
           "License :: OSI Approved :: MIT License",
       ],
-      keywords='',
-      author='Derek Stegelman',
-      author_email='dstegelman@gmail.com',
-      url='http://github.com/dstegelman/django-bootstrap-static',
+      keywords=[
+          'django',
+          'staticfiles',
+          'bootstrap',
+          'jquery',
+          'fontawesome',
+      ],
+      author='Peter Bittner',
+      author_email='django@bittner.it',
+      url='http://github.com/bittner/django-bootstrap-static',
       license='MIT',
       packages=find_packages(),
       install_requires=[],
