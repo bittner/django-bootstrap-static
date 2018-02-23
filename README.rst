@@ -11,15 +11,15 @@ Also ships the latest jQuery compatible with Bootstrap, for optional inclusion.
 .. |latest-version| image:: https://img.shields.io/pypi/v/django-bootstrap-static.svg
    :alt: Latest version on PyPI
    :target: https://pypi.python.org/pypi/django-bootstrap-static
-.. |bootstrap| image:: https://img.shields.io/badge/Bootstrap-v3.3.7-563d7c.svg
-   :alt: Bootstrap 3.3.7
-   :target: http://getbootstrap.com/
-.. |jquery| image:: https://img.shields.io/badge/jQuery-v3.2.1-0769ad.svg
-   :alt: jQuery 3.2.1
-   :target: http://jquery.com/
-.. |fontawesome| image:: https://img.shields.io/badge/Font_Awesome-v4.7.0-1c9a71.svg
-   :alt: Font Awesome 4.7.0
-   :target: http://fontawesome.io/
+.. |bootstrap| image:: https://img.shields.io/badge/Bootstrap-v4.0.0-563d7c.svg
+   :alt: Bootstrap 4.0.0
+   :target: https://getbootstrap.com/
+.. |jquery| image:: https://img.shields.io/badge/jQuery-v3.3.1-0769ad.svg
+   :alt: jQuery 3.3.1
+   :target: https://jquery.com/
+.. |fontawesome| image:: https://img.shields.io/badge/Font_Awesome-v5.0.6-1c9a71.svg
+   :alt: Font Awesome 5.0.6
+   :target: https://fontawesome.com/icons?m=free
 
 Install
 =======
@@ -50,7 +50,7 @@ Then you can include CSS and JavaScript as usual static resources, e.g. using
     {% load static %}
     <head>
         <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
-        <link rel="stylesheet" href="{% static 'fontawesome/css/font-awesome.min.css' %}">
+        <script defer src="{% static 'fontawesome/js/fontawesome-all.min.js' %}"></script>
     </head>
     <body>
         ...
@@ -58,10 +58,21 @@ Then you can include CSS and JavaScript as usual static resources, e.g. using
         <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
     </body>
 
+Note that in the above code sample we use SVG powered Font Awesome, as
+recommended by their docs.  You can use Font Awesome the classic way by
+replacing the ``<script ...>`` tag in the ``<head>`` section above by:
+
+.. code-block:: django
+
+    <link rel="stylesheet" href="{% static 'fontawesome/css/fontawesome-all.min.css' %}">
+
 More details on integration may be available from each of the two projects:
 
-- http://getbootstrap.com/getting-started/
-- http://fontawesome.io/get-started/
+- https://getbootstrap.com/docs/4.0/getting-started/introduction/
+- https://fontawesome.com/get-started (`Upgrading from Version 4 of Font Awesome`_)
+
+.. _Upgrading from Version 4 of Font Awesome:
+    https://fontawesome.com/get-started/web-fonts-with-css#upgrading
 
 Contribution
 ============
@@ -73,28 +84,28 @@ Sources and Procedures
 ----------------------
 
 Bootstrap: (all files from dist package)
-    `Bootstrap website / Getting started`_ -> drop into ``bootstrap/static/bootstrap/``
+    `Bootstrap website / Download`_ -> drop into ``bootstrap/static/bootstrap/``
 jQuery: (compressed, uncompressed, map)
     `jQuery website / Download`_ -> rename and mix into ``bootstrap/static/bootstrap/js/``
 
-    Pick the latest version denoted as a dependency in ``bower.json`` (see `Plugin dependencies`_).
-Font Awesome: (``css/``, ``fonts/`` only)
-    `Font Awesome website`_ ("No thanks, just download") -> drop into ``fontawesome/static/fontawesome/``
+    Pick the latest version denoted as a dependency in ``bower.json`` (see `Dependencies`_).
+Font Awesome: (content of the ``on-server/`` folder only)
+    `Font Awesome website / Download Free`_ -> drop into ``fontawesome/static/fontawesome/``
 
-.. _Bootstrap website / Getting started: http://getbootstrap.com/getting-started/
-.. _jQuery website / Download: http://jquery.com/download/
-.. _Plugin dependencies: https://getbootstrap.com/javascript/
-.. _Font Awesome website: http://fontawesome.io/
+.. _Bootstrap website / Download: https://getbootstrap.com/
+.. _jQuery website / Download: https://jquery.com/download/
+.. _Dependencies: https://getbootstrap.com/docs/4.0/getting-started/javascript/
+.. _Font Awesome website / Download Free: https://fontawesome.com/
 
 Releases
 ========
 
-To keep with the Bootstrap release schedule we will keep version numbers of
-this app in sync with the bootstrap Major.Minor.Revision changes (`semver`_).
-The additional version number will be added at the end to denote a new change
-within this package itself.
+To stay aligned with the Bootstrap release schedule we will keep version
+numbers of this app in sync with the bootstrap Major.Minor.Revision changes
+(`semver`_).  The additional version number will be added at the end to denote
+a new change within this package itself, e.g.
 
 ``django-bootstrap-static==3.3.1.1`` == Bootstrap ``3.3.1`` with an additional
 package change.
 
-.. _semver: http://semver.org/
+.. _semver: https://semver.org/
