@@ -55,7 +55,7 @@ Then you can include CSS and JavaScript as usual static resources, e.g. using
     <body>
         ...
         <script src="{% static 'bootstrap/js/jquery.min.js' %}"></script>
-        <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
     </body>
 
 Note that in the above code sample we use SVG powered Font Awesome, as
@@ -65,6 +65,10 @@ replacing the ``<script ...>`` tag in the ``<head>`` section above by:
 .. code-block:: django
 
     <link rel="stylesheet" href="{% static 'fontawesome/css/fontawesome-all.min.css' %}">
+
+If you don't use Bootstrap features that require ``Popper.js`` (e.g. dropdowns,
+popovers, tooltips) you can include ``bootstrap.min.js`` instead of the bundle
+to save a few kilobytes of bandwidth.
 
 More details on integration may be available from each of the two projects:
 
