@@ -93,13 +93,13 @@ jQuery: (compressed, uncompressed, map)
     `jQuery website / Download`_ -> rename and mix into ``bootstrap/static/bootstrap/js/``
 
     Pick the latest version denoted as a dependency in ``bower.json`` (see `Dependencies`_).
-Font Awesome: (content of the ``on-server/`` folder only)
+Font Awesome: (``css``, ``webfonts``, ``js``, ``sprites`` folders from web package)
     `Font Awesome website / Download Free`_ -> drop into ``fontawesome/static/fontawesome/``
 
 .. _Bootstrap website / Download: https://getbootstrap.com/
 .. _jQuery website / Download: https://jquery.com/download/
 .. _Dependencies: https://getbootstrap.com/docs/4.0/getting-started/javascript/
-.. _Font Awesome website / Download Free: https://fontawesome.com/
+.. _Font Awesome website / Download Font Awesome Free (For the Web): https://fontawesome.com/
 
 Releases
 ========
