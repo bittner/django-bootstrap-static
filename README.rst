@@ -50,7 +50,7 @@ Then you can include CSS and JavaScript as usual static resources, e.g. using
     {% load static %}
     <head>
         <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
-        <script defer src="{% static 'fontawesome/js/fontawesome-all.min.js' %}"></script>
+        <script defer src="{% static 'fontawesome/js/all.js' %}"></script>
     </head>
     <body>
         ...
@@ -64,7 +64,7 @@ replacing the ``<script ...>`` tag in the ``<head>`` section above by:
 
 .. code-block:: django
 
-    <link rel="stylesheet" href="{% static 'fontawesome/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.css' %}">
 
 If you don't use Bootstrap features that require ``Popper.js`` (e.g. dropdowns,
 popovers, tooltips) you can include ``bootstrap.min.js`` instead of the bundle
