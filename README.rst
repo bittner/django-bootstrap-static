@@ -11,14 +11,14 @@ Also ships the latest jQuery compatible with Bootstrap, for optional inclusion.
 .. |latest-version| image:: https://img.shields.io/pypi/v/django-bootstrap-static.svg
    :alt: Latest version on PyPI
    :target: https://pypi.python.org/pypi/django-bootstrap-static
-.. |bootstrap| image:: https://img.shields.io/badge/Bootstrap-v4.1.1-563d7c.svg
-   :alt: Bootstrap 4.1.1
+.. |bootstrap| image:: https://img.shields.io/badge/Bootstrap-v4.1.3-563d7c.svg
+   :alt: Bootstrap 4.1.3
    :target: https://getbootstrap.com/
 .. |jquery| image:: https://img.shields.io/badge/jQuery-v3.3.1-0769ad.svg
    :alt: jQuery 3.3.1
    :target: https://jquery.com/
-.. |fontawesome| image:: https://img.shields.io/badge/Font_Awesome-v5.0.10-1c9a71.svg
-   :alt: Font Awesome 5.0.10
+.. |fontawesome| image:: https://img.shields.io/badge/Font_Awesome-v5.6.3-1c9a71.svg
+   :alt: Font Awesome 5.6.3
    :target: https://fontawesome.com/icons?m=free
 
 Install
@@ -50,7 +50,7 @@ Then you can include CSS and JavaScript as usual static resources, e.g. using
     {% load static %}
     <head>
         <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
-        <script defer src="{% static 'fontawesome/js/fontawesome-all.min.js' %}"></script>
+        <script defer src="{% static 'fontawesome/js/all.min.js' %}"></script>
     </head>
     <body>
         ...
@@ -64,7 +64,7 @@ replacing the ``<script ...>`` tag in the ``<head>`` section above by:
 
 .. code-block:: django
 
-    <link rel="stylesheet" href="{% static 'fontawesome/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}">
 
 If you don't use Bootstrap features that require ``Popper.js`` (e.g. dropdowns,
 popovers, tooltips) you can include ``bootstrap.min.js`` instead of the bundle
