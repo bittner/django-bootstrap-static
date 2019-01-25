@@ -11,14 +11,14 @@ Also ships the latest jQuery compatible with Bootstrap, for optional inclusion.
 .. |latest-version| image:: https://img.shields.io/pypi/v/django-bootstrap-static.svg
    :alt: Latest version on PyPI
    :target: https://pypi.python.org/pypi/django-bootstrap-static
-.. |bootstrap| image:: https://img.shields.io/badge/Bootstrap-v4.0.0-563d7c.svg
-   :alt: Bootstrap 4.0.0
+.. |bootstrap| image:: https://img.shields.io/badge/Bootstrap-v4.1.1-563d7c.svg
+   :alt: Bootstrap 4.1.1
    :target: https://getbootstrap.com/
 .. |jquery| image:: https://img.shields.io/badge/jQuery-v3.3.1-0769ad.svg
    :alt: jQuery 3.3.1
    :target: https://jquery.com/
-.. |fontawesome| image:: https://img.shields.io/badge/Font_Awesome-v5.0.6-1c9a71.svg
-   :alt: Font Awesome 5.0.6
+.. |fontawesome| image:: https://img.shields.io/badge/Font_Awesome-v5.0.10-1c9a71.svg
+   :alt: Font Awesome 5.0.10
    :target: https://fontawesome.com/icons?m=free
 
 Install
