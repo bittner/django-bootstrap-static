@@ -1,0 +1,9 @@
+deploy:
+  - provider: pypi
+    user: your-pypi-username
+    password:
+      secure: your-travis-encrypted-pypi-password
+    server: https://upload.pypi.org/legacy/
+    distributions: sdist bdist_wheel
+    on:
+      tags: true
