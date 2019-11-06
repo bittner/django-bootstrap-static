@@ -2,7 +2,7 @@
 Django Bootstrap Static Files |latest-version|
 ==============================================
 
-|bootstrap| |jquery| |fontawesome|
+|bootstrap| |jquery| |fontawesome| |build-status|
 
 Bootstrap and optional Font Awesome static files ready for the picking.
 
@@ -20,6 +20,9 @@ Also ships the latest jQuery compatible with Bootstrap, for optional inclusion.
 .. |fontawesome| image:: https://img.shields.io/badge/Font_Awesome-v5.6.3-1c9a71.svg
    :alt: Font Awesome 5.6.3
    :target: https://fontawesome.com/icons?m=free
+.. |build-status| image:: https://img.shields.io/travis/bittner/django-bootstrap-static/master.svg?logo=travis
+   :alt: Build status
+   :target: https://travis-ci.org/bittner/django-bootstrap-static
 
 Install
 =======
