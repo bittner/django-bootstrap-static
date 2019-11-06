@@ -1,9 +1,11 @@
+language: python
+python: 3.6
+
 deploy:
-  - provider: pypi
-    user: your-pypi-username
-    password:
-      secure: your-travis-encrypted-pypi-password
-    server: https://upload.pypi.org/legacy/
-    distributions: sdist bdist_wheel
-    on:
-      tags: true
+  provider: pypi
+  distributions: sdist bdist_wheel
+  user: bittner
+  password:
+    secure: bjU1AfMX/fzvBdBA1kcTZIpFoc8cQw7WnVrflSesS452rueiS+aXEk9uFaGTXffWJdP793tmkLMQh1b1hwkwC5GCNf+tEHop9E4A6n+6IS0tDAuApcRCbrIlENhzyR/yNnsBOY6aa0KpVwOFMS94SMlT+q8ZkEw4IQHcNaej9ys=
+  on:
+    tags: true
