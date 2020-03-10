@@ -1,5 +1,8 @@
+os: linux
+dist: xenial
+
 language: python
-python: 3.6
+python: 3.7
 
 stages:
 - lint readme
@@ -16,13 +19,14 @@ jobs:
     - twine check dist/*
 
   - stage: deploy package
-    install: skip
-    script: skip
+    if: tag is present
     deploy:
       provider: pypi
       distributions: sdist bdist_wheel
-      user: bittner
+      username: bittner
       password:
         secure: bjU1AfMX/fzvBdBA1kcTZIpFoc8cQw7WnVrflSesS452rueiS+aXEk9uFaGTXffWJdP793tmkLMQh1b1hwkwC5GCNf+tEHop9E4A6n+6IS0tDAuApcRCbrIlENhzyR/yNnsBOY6aa0KpVwOFMS94SMlT+q8ZkEw4IQHcNaej9ys=
       on:
         tags: true
+    install: skip
+    script: skip
