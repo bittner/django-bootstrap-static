@@ -11,14 +11,14 @@ Also ships the latest jQuery compatible with Bootstrap, for optional inclusion.
 .. |latest-version| image:: https://img.shields.io/pypi/v/django-bootstrap-static.svg
    :alt: Latest version on PyPI
    :target: https://pypi.python.org/pypi/django-bootstrap-static
-.. |bootstrap| image:: https://img.shields.io/badge/Bootstrap-v4.2.1-563d7c.svg
-   :alt: Bootstrap 4.2.1
+.. |bootstrap| image:: https://img.shields.io/badge/Bootstrap-v5.0.0--beta1-563d7c.svg
+   :alt: Bootstrap 5.0.0-beta1
    :target: https://getbootstrap.com/
-.. |jquery| image:: https://img.shields.io/badge/jQuery-v3.3.1-0769ad.svg
-   :alt: jQuery 3.3.1
+.. |jquery| image:: https://img.shields.io/badge/jQuery-v3.5.1-0769ad.svg
+   :alt: jQuery 3.5.1
    :target: https://jquery.com/
-.. |fontawesome| image:: https://img.shields.io/badge/Font_Awesome-v5.6.3-1c9a71.svg
-   :alt: Font Awesome 5.6.3
+.. |fontawesome| image:: https://img.shields.io/badge/Font_Awesome-v5.15.1-1c9a71.svg
+   :alt: Font Awesome 5.15.1
    :target: https://fontawesome.com/icons?m=free
 .. |build-status| image:: https://img.shields.io/travis/bittner/django-bootstrap-static/master.svg?logo=travis
    :alt: Build status
@@ -75,7 +75,7 @@ to save a few kilobytes of bandwidth.
 
 More details on integration may be available from each of the two projects:
 
-- https://getbootstrap.com/docs/4.0/getting-started/introduction/
+- https://getbootstrap.com/docs/5.0/getting-started/introduction/
 - https://fontawesome.com/get-started (`Upgrading from Version 4 of Font Awesome`_)
 
 .. _Upgrading from Version 4 of Font Awesome:
@@ -101,7 +101,7 @@ Font Awesome: (content of the ``on-server/`` folder only)
 
 .. _Bootstrap website / Download: https://getbootstrap.com/
 .. _jQuery website / Download: https://jquery.com/download/
-.. _Dependencies: https://getbootstrap.com/docs/4.0/getting-started/javascript/
+.. _Dependencies: https://getbootstrap.com/docs/5.0/getting-started/javascript/
 .. _Font Awesome website / Download Free: https://fontawesome.com/
 
 Releases
