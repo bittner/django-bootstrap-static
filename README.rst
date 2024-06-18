@@ -2,7 +2,7 @@
 Django Bootstrap Static Files |latest-version|
 ==============================================
 
-|bootstrap| |jquery| |fontawesome| |build-status|
+|bootstrap| |jquery| |fontawesome| |pipeline|
 
 Bootstrap and optional Font Awesome static files ready for the picking.
 
@@ -20,9 +20,9 @@ Also ships the latest jQuery compatible with Bootstrap, for optional inclusion.
 .. |fontawesome| image:: https://img.shields.io/badge/Font_Awesome-v6.5.2-1c9a71.svg
    :alt: Font Awesome 6.5.2
    :target: https://fontawesome.com/icons?m=free
-.. |build-status| image:: https://img.shields.io/travis/bittner/django-bootstrap-static/master.svg?logo=travis
+.. |pipeline| image:: https://github.com/bittner/django-bootstrap-static/actions/workflows/pipeline.yml/badge.svg
    :alt: Build status
-   :target: https://travis-ci.org/bittner/django-bootstrap-static
+   :target: https://github.com/bittner/django-bootstrap-static/actions/workflows/pipeline.yml
 
 Install
 =======
@@ -75,7 +75,7 @@ to save a few kilobytes of bandwidth.
 
 More details on integration may be available from each of the two projects:
 
-- https://getbootstrap.com/docs/5.0/getting-started/introduction/
+- https://getbootstrap.com/docs/5.3/getting-started/introduction/
 - https://fontawesome.com/get-started (`Upgrading from Version 4 of Font Awesome`_)
 
 .. _Upgrading from Version 4 of Font Awesome:
@@ -91,18 +91,36 @@ Sources and Procedures
 ----------------------
 
 Bootstrap: (all files from dist package)
-    `Bootstrap website / Download`_ -> drop into ``bootstrap/static/bootstrap/``
+    `Bootstrap website / Download`_ ➜ drop into ``bootstrap/static/bootstrap/``
 jQuery: (compressed, uncompressed, map)
-    `jQuery website / Download`_ -> rename and mix into ``bootstrap/static/bootstrap/js/``
+    `jQuery website / Download`_ ➜ rename and mix into ``bootstrap/static/bootstrap/js/``
 
     Pick the latest version denoted as a dependency in ``bower.json`` (see `Dependencies`_).
 Font Awesome: (content of the ``on-server/`` folder only)
-    `Font Awesome website / Download Free`_ -> drop into ``fontawesome/static/fontawesome/``
+    `Font Awesome website / Download Free`_ ➜ drop into ``fontawesome/static/fontawesome/``
 
-.. _Bootstrap website / Download: https://getbootstrap.com/
-.. _jQuery website / Download: https://jquery.com/download/
-.. _Dependencies: https://getbootstrap.com/docs/5.0/getting-started/javascript/
-.. _Font Awesome website / Download Free: https://fontawesome.com/
+Tests
+-----
+
+Tests are great! And necessary. Please, add more. More is better!
+We use `Tox`_.
+
+.. code-block:: console
+
+    pip install tox
+
+Run all the linting and tests locally using Tox like this:
+
+.. code-block:: console
+
+    tox
+
+.. code-block:: console
+
+    tox list
+    tox -e package
+    tox -e py310,clean
+    tox -e format -- tests
 
 Releases
 ========
@@ -115,4 +133,9 @@ a new change within this package itself, e.g.
 ``django-bootstrap-static==3.3.1.1`` == Bootstrap ``3.3.1`` with an additional
 package change.
 
+.. _Bootstrap website / Download: https://getbootstrap.com/
+.. _jQuery website / Download: https://jquery.com/download/
+.. _Dependencies: https://getbootstrap.com/docs/5.0/getting-started/javascript/
+.. _Font Awesome website / Download Free: https://fontawesome.com/
+.. _Tox: https://tox.wiki/
 .. _semver: https://semver.org/

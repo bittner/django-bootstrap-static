@@ -1,8 +1,5 @@
 """
-A collection of Bootstrap static files.
+A collection of Bootstrap static files. Font Awesome.
 """
-__author__ = 'Peter Bittner'
-__email__ = 'django@bittner.it'
-__license__ = 'MIT'
-__url__ = 'https://github.com/bittner/django-bootstrap-static'
-__version__ = '5.3.3'
+
+__version__ = "5.3.3"

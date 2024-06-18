@@ -1,8 +1,7 @@
 Maintainers
 -----------
 
-* Derek Stegelman (@dstegelman), original author
-* Peter Bittner (@bittner), current maintainer
+* Peter Bittner (@bittner)
 
 Contributors
 ------------
@@ -11,3 +10,10 @@ Contributors
 * Aaron VanDerlip (@aaronvanderlip)
 * Travis Swicegood (@tswicegood)
 * Pablo Castellano (@PabloCastellano)
+* Amit Kumar (@umrao-ak47)
+* Wolfgang Herget (@wherget)
+
+Original Author
+---------------
+
+* Derek Stegelman (@dstegelman)

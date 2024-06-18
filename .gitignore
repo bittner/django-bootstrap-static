@@ -1,6 +1,8 @@
+# Bytecode
 *.py[co]
 
 # Packages
+django_bootstrap_static-*/
 *.egg
 *.egg-info
 dist
@@ -20,10 +22,10 @@ pip-log.txt
 .coverage
 .tox
 
-#Translations
+# Translations
 *.mo
 
-#Mr Developer
+# Mr Developer
 .mr.developer.cfg
 .idea
 *.DS_Store
