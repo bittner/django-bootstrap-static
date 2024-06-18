@@ -10,6 +10,7 @@ readme = "README.rst"
 license = {file = "LICENSE"}
 authors = [
   {name = "Peter Bittner", email = "django@bittner.it"},
+  {name = "Derek Stegelman ", email = "dstegelman@gmail.com"},
 ]
 maintainers = [
   {name = "Peter Bittner", email = "django@bittner.it"},
