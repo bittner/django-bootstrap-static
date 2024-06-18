@@ -1,0 +1,61 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+
+[project]
+name = "django-bootstrap-static"
+dynamic = ["version"]
+description = "A collection of Bootstrap static files."
+readme = "README.rst"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Peter Bittner", email = "django@bittner.it"},
+]
+maintainers = [
+  {name = "Peter Bittner", email = "django@bittner.it"},
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Web Environment",
+  "Intended Audience :: Developers",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Framework :: Django",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 2",
+  "Programming Language :: Python :: 3",
+  "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: CGI Tools/Libraries",
+  "Topic :: Utilities",
+  "License :: OSI Approved :: MIT License",
+]
+keywords=[
+  "django",
+  "staticfiles",
+  "bootstrap",
+  "jquery",
+  "fontawesome",
+]
+
+[project.urls]
+source = "https://github.com/bittner/django-bootstrap-static"
+
+[tool.pytest.ini_options]
+addopts = "--color=yes --doctest-modules --verbose"
+
+[tool.ruff]
+extend-exclude = []
+extend-include = []
+
+[tool.ruff.lint]
+extend-select = ["ALL"]
+extend-ignore = ["ANN", "D", "INP001", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*.py" = ["S101"]
+
+[tool.setuptools]
+include-package-data = true
+packages = ["bootstrap", "fontawesome"]
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
