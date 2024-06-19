@@ -2,7 +2,7 @@
 
 from django.template import Context, Template
 
-template = """
+readme_template = """
     {% load static %}
     <head>
         <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
@@ -15,8 +15,13 @@ template = """
     </body>
 """
 
+classic_template = """
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}">
+"""
 
-def test_template():
+
+def test_readme_template():
     """Importing the package should work as described in the README."""
     bootstrap_min_css = "bootstrap/css/bootstrap.min.css"
     bootstrap_min_js = "bootstrap/js/bootstrap.bundle.min.js"
@@ -24,10 +29,21 @@ def test_template():
     jquery_min_js = "bootstrap/js/jquery.min.js"
 
     c = Context()
-    t = Template(template)
+    t = Template(readme_template)
     html = t.render(c)
 
     assert f'<link rel="stylesheet" href="/static/{bootstrap_min_css}">' in html
     assert f'<script defer src="/static/{fontawesome_min_js}"></script>' in html
     assert f'<script src="/static/{jquery_min_js}"></script>' in html
     assert f'<script src="/static/{bootstrap_min_js}"></script>' in html
+
+
+def test_classic_fontawesome():
+    """Non-JS powered, classic Font Awesome."""
+    fontawesome_min_css = "fontawesome/css/all.min.css"
+
+    c = Context()
+    t = Template(classic_template)
+    html = t.render(c)
+
+    assert f'<link rel="stylesheet" href="/static/{fontawesome_min_css}">' in html
