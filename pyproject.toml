@@ -42,6 +42,10 @@ source = "https://github.com/bittner/django-bootstrap-static"
 
 [tool.pytest.ini_options]
 addopts = "--color=yes --doctest-modules --verbose"
+python_files = ["tests.py", "test_*.py", "*_tests.py"]
+pythonpath = ["tests"]
+DJANGO_SETTINGS_MODULE = "test_project.settings"
+FAIL_INVALID_TEMPLATE_VARS = true
 
 [tool.ruff]
 extend-exclude = []
